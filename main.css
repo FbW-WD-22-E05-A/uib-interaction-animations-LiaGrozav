@@ -16,14 +16,74 @@ div {
   width: 20%;
 }
 
-.strobe_1 {
+.strobe_1:hover {
   background-color: yellow;
-  animation: first 2s infinite alternate-reverse;
+  animation: first 0.5s infinite alternate-reverse;
 }
 
-@keyframes strobe_1 {
-  from,to {
+.strobe_2:hover {
+  background-color: pink;
+  animation: second 0.5s infinite alternate-reverse;
+}
+
+.strobe_3:hover {
+  background-color: rgb(34, 73, 156);
+  animation: third 0.5s infinite alternate-reverse;
+}
+
+.strobe_4:hover {
+  background-color: rgb(197, 116, 40);
+  animation: fourth 1.5s infinite alternate-reverse;
+}
+
+.strobe_5:hover {
+  background-color: rgb(51, 168, 65);
+  animation: fifth 1.5s infinite alternate-reverse;
+}
+
+@keyframes first {
+  from {
     background-color: yellow;
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
+
+@keyframes second {
+  0% {
+    background-color: pink;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+}
+
+@keyframes third {
+  0% {
+    background-color: rgb(34, 73, 156);
+  }
+
+  50% {
+    background-color: transparent;
+  }
+}
+
+@keyframes fourth {
+  0% {
+    background-color: rgb(197, 116, 40);
+  }
+
+  50% {
+    background-color: transparent;
+  }
+}
+
+@keyframes fifth {
+  0% {
+    background-color: rgb(51, 168, 65);
   }
 
   50% {
